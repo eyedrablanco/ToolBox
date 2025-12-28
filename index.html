@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herramientas Útiles - Minimalista</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563EB',
+              'primary-light': '#DBEAFE',
+              'primary-dark': '#1E40AF',
+              secondary: '#DC2626',
+              'secondary-dark': '#B91C1C',
+              whatsapp: '#25D366',
+              'gray-light': '#F3F4F6',
+              'gray-medium': '#6B7280',
+              'gray-dark': '#1F2937',
+            },
+            fontFamily: {
+              sans: ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .tool-card {
+        transition: all 0.3s ease;
+      }
+      .tool-card:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      }
+      .sticky-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        height: 70px;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2563EB;
+        border-radius: 4px;
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "chart.js": "https://esm.sh/chart.js@4.4.1",
+    "jsbarcode": "https://esm.sh/jsbarcode@3.11.5",
+    "pdf-lib": "https://esm.sh/pdf-lib@1.17.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-CxbXU-s9.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
